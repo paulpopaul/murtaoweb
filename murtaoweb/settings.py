@@ -34,7 +34,7 @@ SECRET_KEY = '$*engvnvb^o&xf4fag-$1yh=eg%&l65e8t^-f(g1o*qb4(!000'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'127.0.0.1', u'murtao.cl', u'www.murtao.cl', u'192.168.1.8', u'192.168.1.10', u'192.168.1.7', u'0.0.0.0']
+ALLOWED_HOSTS = [u'127.0.0.1', u'murtao.cl', u'www.murtao.cl', u'3.17.68.47', u'0.0.0.0']
 
 # Application definition
 
