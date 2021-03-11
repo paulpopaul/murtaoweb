@@ -34,7 +34,7 @@ SECRET_KEY = '$*engvnvb^o&xf4fag-$1yh=eg%&l65e8t^-f(g1o*qb4(!000'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'127.0.0.1', u'murtao.cl', u'www.murtao.cl', u'3.17.68.47', u'0.0.0.0']
+ALLOWED_HOSTS = [u'127.0.0.1', u'murtao.cl', u'www.murtao.cl', u'3.142.141.192', u'0.0.0.0']
 
 # Application definition
 
@@ -69,7 +69,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'simple_history.middleware.HistoryRequestMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ROOT_URLCONF = 'murtaoweb.urls'
 
